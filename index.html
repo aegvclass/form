@@ -1,0 +1,116 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <table>
+            <form name="F3" method="post"></form>
+            <tr>
+                <td><label>Nome da  configuração</label></td>
+                <td><input type="text" name="name" placeholder="Digite o nome da  configuração"></td>
+            </tr>
+
+            <tr>
+                <td><label>Modalidades que pratica</label></td>
+                <td>
+                <input type="checkbox" value="dirtbike" name="modle" required>CrossBike
+                <input type="checkbox" value="sports" name="modle" required>MountainBike
+                <input type="checkbox" value="naked" name="modle" required>RoadBike
+                </td>
+            </tr>
+
+            <tr>        
+                <td><label for="">Que modalidades prefere dentro do bike</label></td>
+                <td>
+                    <input type="radio" value="All Mountain" name="All Mountain">All Mountain
+                    <br>
+                    <input type="radio" value="Cross Country" name="Cross Country">Cross Country
+                    <br>
+                    <input type="radio" value="Dirt" name="Dirt">Dirt
+                    <br>
+                    <input type="radio" value="DownHill" name="DownHill">DownHill
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Modalidade da Frame</label></td>
+                <td>
+                    <input type="radio" value="carbon" name="frame" required>Carbon
+                    <input type="radio" value="Aluminium" name="frame" required>Aluminium
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="">Escolha a Marca</label></td>
+                <td>
+                    <select name="marca" placeholder="Escolha a marca">
+                    <option value="" selected disabled>Escolha a marca</option>
+                    <option value="Merida">Merida</option>
+                    <option value="KTM">KTM</option>
+                    <option value="Specialized">Specialized</option>
+                    <option value="Scott">Scott</option>
+                    <option value="Cube">Cube</option>
+                    <option value="Cannondale">Cannondale</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="componentsToImprove">Componentes a melhorar:</label></td>
+                <td>
+                    <select id="componentsToImprove" name="componentsToImprove" multiple>
+                    <option value="brakes">Break</option>
+                    <option value="setpost">Setpost</option>
+                    <option value="gears">Gears</option>
+                    <option value="hubs">Hubs</option>
+                    <option value="rims">Rim</option>
+                    <option value="shiftLevers">shiftLevers </option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="">Escolha uma promoção:</label></td>
+                <td>
+                    <select name = promocoes>
+                        <option value="" selected style="display: none;"> Escolha uma promoção    </option>
+                        <optgroup label="Componentes">
+                            <option value="Brakes">Brakes</option>
+                            <option value="Setpost">Setpost</option>
+                            <option value="Gears">Gears</option>
+                            <option value="Hubs">Hubs</option>
+                            <option value="Rims">Rims</option>
+                            <option value="Shift">Shift Levers</option>
+                        </optgroup>
+
+                        <optgroup label="Bikes">
+                            <option value="me">Merida</option>
+                            <option value="sp">Specialized</option>
+                            <option value="fc">Focus</option>
+                        </optgroup>
+                        <optgroup label="Clothing">
+                            <option value="sh">Shorts</option>
+                            <option value="sc">Shoes</option>
+                            <option value="he">Helmets</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submeter"> <input type="reset" value="Reiniciar"></td>
+            </tr>
+
+            
+            
+
+        </table>
+        
+    </body>
+    </html>
+
